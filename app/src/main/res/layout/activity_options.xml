@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Options">
+
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/search_menu"
+
+        app:subtitleTextColor="#FFFFFF"
+
+
+        app:title="@string/app_name"
+        app:titleTextColor="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+
+        >
+
+        <Button
+            android:id="@+id/ngo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FB8C00"
+            android:layout_margin="10dp"
+            android:text="@string/non_government_organization"
+
+
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/donate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="#7CB342"
+            android:text="@string/plasma_and_organ_donation"
+            android:textSize="30sp" />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
